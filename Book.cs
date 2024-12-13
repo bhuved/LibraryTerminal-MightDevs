@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LibraryTerminal_MightyDevs
+{
+    public class Book
+    {
+        public string Title { get; set; }
+        public string Author { get; set; }
+
+        public StatusEnum Status { get; set; }
+
+        public DateTime DueDate { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Title}|{Author}|{Status}|{DueDate}";
+        }
+
+        public string FormatText()
+        {
+            return $"{Title}     \t\t\t{Author}\t         {Status} \t{DueDate}";
+        }
+
+    }
+}
