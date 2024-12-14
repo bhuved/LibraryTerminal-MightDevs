@@ -13,16 +13,16 @@ namespace LibraryTerminal_MightyDevs
 
         public StatusEnum Status { get; set; }
 
-        public DateTime DueDate { get; set; }
+        public DateTime? DueDate { get; set; } = null;
 
         public override string ToString()
         {
-            return $"{Title}|{Author}|{Status}|{DueDate}";
+            return $"{Title}|{Author}|{Status}";
         }
 
         public string FormatText()
         {
-            return $"{Title}     \t\t\t{Author}\t         {Status} \t{DueDate}";
+            return $"{Title}     \t\t\t{Author}\t         {Status} {DueDate}";
         }
 
     }
