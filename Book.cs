@@ -22,7 +22,7 @@ namespace LibraryTerminal_MightyDevs
 
         public string FormatText()
         {
-            return $"{Title}     \t\t\t{Author}\t         {Status} {DueDate}";
+            return $"{Title.PadRight(35)}{Author.PadRight(30)}{Status}\t{DueDate}";
         }
 
     }
